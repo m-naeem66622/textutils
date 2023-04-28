@@ -33,7 +33,7 @@ function App() {
 
   return (
     <>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <NavBar theme={theme} toggleTheme={toggleTheme} alert={alert} />
         <Alert alert={alert} />
         <Routes>
